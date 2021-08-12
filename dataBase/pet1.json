@@ -1,0 +1,19 @@
+{
+  "id": 0,
+  "category": {
+    "id": 1,
+    "name": "Cachorro"
+  },
+  "name": "Stark",
+  "photoUrls": [
+    "/home/oliveirabauer/Imagens/cachorro-origem5.jpg",
+    "/home/oliveirabauer/Imagens/download.jpeg"
+  ],
+  "tags": [
+    {
+      "id": 2021,
+      "name": "sta"
+    }
+  ],
+  "status": "available"
+}
