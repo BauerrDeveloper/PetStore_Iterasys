@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-12T01:23:43" hostname="oliveirabauer" time="4.772">
+<testsuite name="petstore.Pet" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-13T00:28:31" hostname="UDI-9G0DM83" time="3.92">
   <properties/>
-  <testcase name="inclurPet" classname="petstore.Pet" time="4.772"/>
+  <testcase name="inclurPet" classname="petstore.Pet" time="2.958"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="0.958"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -15,10 +16,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 0,
+    "id": 98765432198,
     "category": {
         "id": 1,
-        "name": "Cachorro"
+        "name": "AX2345LORT"
     },
     "name": "Stark",
     "photoUrls": [
@@ -34,7 +35,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Thu, 12 Aug 2021 01:23:48 GMT
+Date: Fri, 13 Aug 2021 00:28:32 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -44,10 +45,10 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372000001117859,
+    "id": 98765432198,
     "category": {
         "id": 1,
-        "name": "Cachorro"
+        "name": "AX2345LORT"
     },
     "name": "Stark",
     "photoUrls": [
@@ -62,6 +63,48 @@ Server: Jetty(9.2.9.v20150224)
     ],
     "status": "available"
 }
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/98765432198
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 13 Aug 2021 00:28:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 98765432198,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Stark",
+    "photoUrls": [
+        "/home/oliveirabauer/Imagens/cachorro-origem5.jpg",
+        "/home/oliveirabauer/Imagens/download.jpeg"
+    ],
+    "tags": [
+        {
+            "id": 2021,
+            "name": "sta"
+        }
+    ],
+    "status": "available"
+}
+TOKEN: AX2345LORT
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
