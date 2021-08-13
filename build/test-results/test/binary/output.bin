@@ -1,5 +1,5 @@
-Request method:	POST
-1Request URI:	https://petstore.swagger.io/v2/pet
+Request method:	DELETE
+ARequest URI:	https://petstore.swagger.io/v2/pet/987654321980000
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -9,30 +9,9 @@
 2				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "id": 98765432198,
-    "category": {
-        "id": 1,
-        "name": "AX2345LORT"
-    },
-    "name": "Stark",
-    "photoUrls": [
-<        "/home/oliveirabauer/Imagens/cachorro-origem5.jpg",
-4        "/home/oliveirabauer/Imagens/download.jpeg"
-    ],
-    "tags": [
-
-        {
-            "id": 2021,
-            "name": "sta"
-
-        }
-    ],
-    "status": "available"
-}
+Body:			<none>
 HTTP/1.1 200 OK
-%Date: Fri, 13 Aug 2021 00:28:32 GMT
+%Date: Fri, 13 Aug 2021 01:16:49 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -42,67 +21,7 @@
  Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 98765432198,
-    "category": {
-        "id": 1,
-        "name": "AX2345LORT"
-    },
-    "name": "Stark",
-    "photoUrls": [
-<        "/home/oliveirabauer/Imagens/cachorro-origem5.jpg",
-4        "/home/oliveirabauer/Imagens/download.jpeg"
-    ],
-    "tags": [
-
-        {
-            "id": 2021,
-            "name": "sta"
-
-        }
-    ],
-    "status": "available"
+    "code": 200,
+    "type": "unknown",
+!    "message": "987654321980000"
 }
-Request method:	GET
-=Request URI:	https://petstore.swagger.io/v2/pet/98765432198
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-2				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-%Date: Fri, 13 Aug 2021 00:28:33 GMT
- Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
- Access-Control-Allow-Origin: *
-6Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-DAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
- Server: Jetty(9.2.9.v20150224)
-
-{
-    "id": 98765432198,
-    "category": {
-        "id": 1,
-        "name": "AX2345LORT"
-    },
-    "name": "Stark",
-    "photoUrls": [
-<        "/home/oliveirabauer/Imagens/cachorro-origem5.jpg",
-4        "/home/oliveirabauer/Imagens/download.jpeg"
-    ],
-    "tags": [
-
-        {
-            "id": 2021,
-            "name": "sta"
-
-        }
-    ],
-    "status": "available"
-}
-TOKEN: AX2345LORT
