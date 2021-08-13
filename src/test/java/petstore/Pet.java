@@ -45,7 +45,7 @@ public class Pet {
 
 @Test(priority = 2)
     public void consultarPet(){
-        String petId = "98765432198";
+        String petId = "987654321980000";
 
         String token =
         given()
@@ -81,6 +81,24 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is("Stark"))
                 .body("status", is("sold"))
+        ;
+    }
+
+    @Test(priority = 4)
+    public void excluirPet() throws IOException {
+        String petId = "987654321980000";
+
+        given()
+                .contentType("application/json")
+                .log().all()
+        .when()
+                .delete(uri + "/" + petId)
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("code", is(200))
+                .body("type", is("unknown"))
+                .body("message", is(petId))
         ;
     }
 

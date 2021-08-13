@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">5.029s</div>
+<div class="counter">2.982s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,18 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">alterarPet</td>
-<td class="success">0.932s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">consultarPet</td>
-<td class="success">1.012s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">inclurPet</td>
-<td class="success">3.085s</td>
+<td class="success">excluirPet</td>
+<td class="success">2.982s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,68 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;id&quot;: 98765432198,
-    &quot;category&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;AX2345LORT&quot;
-    },
-    &quot;name&quot;: &quot;Stark&quot;,
-    &quot;photoUrls&quot;: [
-        &quot;/home/oliveirabauer/Imagens/cachorro-origem5.jpg&quot;,
-        &quot;/home/oliveirabauer/Imagens/download.jpeg&quot;
-    ],
-    &quot;tags&quot;: [
-        {
-            &quot;id&quot;: 2021,
-            &quot;name&quot;: &quot;sta&quot;
-        }
-    ],
-    &quot;status&quot;: &quot;available&quot;
-}
-HTTP/1.1 200 OK
-Date: Fri, 13 Aug 2021 00:50:08 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    &quot;id&quot;: 98765432198,
-    &quot;category&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;AX2345LORT&quot;
-    },
-    &quot;name&quot;: &quot;Stark&quot;,
-    &quot;photoUrls&quot;: [
-        &quot;/home/oliveirabauer/Imagens/cachorro-origem5.jpg&quot;,
-        &quot;/home/oliveirabauer/Imagens/download.jpeg&quot;
-    ],
-    &quot;tags&quot;: [
-        {
-            &quot;id&quot;: 2021,
-            &quot;name&quot;: &quot;sta&quot;
-        }
-    ],
-    &quot;status&quot;: &quot;available&quot;
-}
-Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/pet/98765432198
+<pre>Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/987654321980000
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -170,7 +100,7 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 HTTP/1.1 200 OK
-Date: Fri, 13 Aug 2021 00:50:10 GMT
+Date: Fri, 13 Aug 2021 01:16:49 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -180,84 +110,9 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    &quot;id&quot;: 98765432198,
-    &quot;category&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;AX2345LORT&quot;
-    },
-    &quot;name&quot;: &quot;Stark&quot;,
-    &quot;photoUrls&quot;: [
-        &quot;/home/oliveirabauer/Imagens/cachorro-origem5.jpg&quot;,
-        &quot;/home/oliveirabauer/Imagens/download.jpeg&quot;
-    ],
-    &quot;tags&quot;: [
-        {
-            &quot;id&quot;: 2021,
-            &quot;name&quot;: &quot;sta&quot;
-        }
-    ],
-    &quot;status&quot;: &quot;available&quot;
-}
-TOKEN: AX2345LORT
-Request method:	PUT
-Request URI:	https://petstore.swagger.io/v2/pet
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;id&quot;: 98765432198,
-    &quot;category&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;AX2345LORT&quot;
-    },
-    &quot;name&quot;: &quot;Stark&quot;,
-    &quot;photoUrls&quot;: [
-        &quot;/home/oliveirabauer/Imagens/cachorro-origem5.jpg&quot;,
-        &quot;/home/oliveirabauer/Imagens/download.jpeg&quot;
-    ],
-    &quot;tags&quot;: [
-        {
-            &quot;id&quot;: 2021,
-            &quot;name&quot;: &quot;sta&quot;
-        }
-    ],
-    &quot;status&quot;: &quot;sold&quot;
-}
-HTTP/1.1 200 OK
-Date: Fri, 13 Aug 2021 00:50:11 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    &quot;id&quot;: 98765432198,
-    &quot;category&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;AX2345LORT&quot;
-    },
-    &quot;name&quot;: &quot;Stark&quot;,
-    &quot;photoUrls&quot;: [
-        &quot;/home/oliveirabauer/Imagens/cachorro-origem5.jpg&quot;,
-        &quot;/home/oliveirabauer/Imagens/download.jpeg&quot;
-    ],
-    &quot;tags&quot;: [
-        {
-            &quot;id&quot;: 2021,
-            &quot;name&quot;: &quot;sta&quot;
-        }
-    ],
-    &quot;status&quot;: &quot;sold&quot;
+    &quot;code&quot;: 200,
+    &quot;type&quot;: &quot;unknown&quot;,
+    &quot;message&quot;: &quot;987654321980000&quot;
 }
 </pre>
 </span>
@@ -270,7 +125,7 @@ Server: Jetty(9.2.9.v20150224)
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 12 de ago. de 2021 21:50:12</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 12 de ago. de 2021 22:16:51</p>
 </div>
 </div>
 </body>
