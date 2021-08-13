@@ -1,0 +1,19 @@
+{
+  "id": 98765432198,
+  "category": {
+    "id": 1,
+    "name": "AX2345LORT"
+  },
+  "name": "Stark",
+  "photoUrls": [
+    "/home/oliveirabauer/Imagens/cachorro-origem5.jpg",
+    "/home/oliveirabauer/Imagens/download.jpeg"
+  ],
+  "tags": [
+    {
+      "id": 2021,
+      "name": "sta"
+    }
+  ],
+  "status": "sold"
+}
