@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.contains;
+
 
 public class Pet {
 
@@ -16,7 +20,7 @@ public class Pet {
         return new String(Files.readAllBytes(Paths.get(caminhoJson)));
     }
 
-    @Test
+    @Test(priority = 1)
     public void inclurPet() throws IOException {
         String jsonBody = lerJson("dataBase/pet1.json");
 
@@ -28,9 +32,37 @@ public class Pet {
                 .post(uri)
         .then()
                 .log().all().statusCode(200)
+                .body("name", is("Stark"))
+                .body("category.name", is("AX2345LORT"))
+                .body("status", is("available"))
+
         ;
 
 
     }
 
+
+
+@Test(priority = 2)
+    public void consultarPet(){
+        String petId = "98765432198";
+
+        String token =
+        given()
+                .contentType("application/json")
+                .log().all()
+                .when()
+                        .get(uri + "/" + petId)
+                .then()
+                        .log().all()
+                        .statusCode(200)
+                .body("name", is("Stark"))
+                .body("category.name", is("AX2345LORT"))
+                .body("status", is("available"))
+        .extract()
+            .path("category.name");
+
+    System.out.println("TOKEN: " + token);
+        ;
+    }
 }
